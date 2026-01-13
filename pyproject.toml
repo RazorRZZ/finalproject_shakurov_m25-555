@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "finalproject-shakurov-m25-555"
+version = "0.1.0"
+description = "A platform for tracking and simulating currency trading developed as a part of the second project for the Python programming course"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
