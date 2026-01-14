@@ -9,5 +9,16 @@
         "balance": 15.0
       }
     }
+  },
+  {
+    "user_id": 2,
+    "wallets": {
+      "USD": {
+        "balance": 9886.0
+      },
+      "DOT": {
+        "balance": 50.0
+      }
+    }
   }
 ]

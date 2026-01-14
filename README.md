@@ -9,21 +9,55 @@
 5. Публикация сборки: make publish
 6. Проверка кода в соответствии с ruff: make lint
 
+Структура каталогов:
+
+finalproject_shakurov_m25-555/
+│  
+├── data/
+│    ├── users.json          
+│    ├── portfolios.json       
+│    └── rates.json            
+├── valutatrade_hub/
+│    ├── __init__.py
+│    ├── logging_config.py         
+│    ├── decorators.py             
+│    ├── core/
+│    │    ├── __init__.py
+│    │    ├── currencies.py         
+│    │    ├── exceptions.py         
+│    │    ├── models.py             
+│    │    ├── usecases.py           
+│    │    └── utils.py              
+│    ├── infra/
+│    │    ├─ __init__.py
+│    │    ├── settings.py           
+│    │    └── database.py           
+│    └── cli/
+│         ├─ __init__.py
+│         └─ interface.py     
+│
+├── main.py
+├── Makefile
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+└── .gitignore               
+
 Команды для взаимодействия программой:
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
+1. register - регистрация нового пользователя (логин + пароль)
+2. login - вход зарегистрированного пользователя в аккаунт
+3. portfolio - просмотр финансового портфеля пользователя (по умолчанию значения счёта = 10'000 USD)
+4. buy - покупка валюты
+5. sell - продажа валюты
+6. get-rate - просмотр списка курсов валют
+7. show-rates - просмотр отфильтрованного списка курсов валют
+8. update - обновление списка валют
+9. parser - проверка состояния парсера
+10. autoupdate - запуск автоматического обновления парсера
+11. stop - остановка автоматического обновления парсера
+12. exit - выход из приложения
 
 Запись asciinema:
 
-#Здесь будет ссылка
+https://asciinema.org/a/ATYxPaT5xzkYQKui
