@@ -123,7 +123,7 @@ class PortfolioManager:
     @log_action('BUY', verbose=True)
     def buy_currency(self, user_id: int, currency_code: str, amount: float, base_currency: str = 'USD') -> Dict[str, Any]:
         '''
-        Покупка валюты с списанием базовой валюты
+        Покупка валюты со списанием базовой валюты
         '''
         if amount <= 0:
             raise ValueError('Количество должно быть положительным')

@@ -20,7 +20,7 @@ class User:
     
     def _hash_password(self, password: str) -> str:
         '''
-        Хеширование пароля с солью
+        Хеширование пароля с "солью"
         '''
         return hashlib.sha256((password + self._salt).encode()).hexdigest()
     

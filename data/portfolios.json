@@ -1,0 +1,13 @@
+[
+  {
+    "user_id": 1,
+    "wallets": {
+      "USD": {
+        "balance": 9965.8
+      },
+      "DOT": {
+        "balance": 15.0
+      }
+    }
+  }
+]

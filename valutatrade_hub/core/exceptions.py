@@ -11,7 +11,7 @@ class ValutaTradeError(Exception):
 
 class InsufficientFundsError(ValutaTradeError):
     '''
-    Обработка исключения - не можешь списать денег больше чем у тебя есть (купить/продать)
+    Обработка исключения - невозможно списать денег больше, чем у тебя есть (купить/продать)
     '''
     def __init__(self, available: float, required: float, code: str):
         self.available = available
@@ -22,7 +22,7 @@ class InsufficientFundsError(ValutaTradeError):
 
 class CurrencyNotFoundError(ValutaTradeError):
     '''
-    Проверяет существует ли данная валюта или нет
+    Проверяет, существует ли данная валюта или нет
     '''
     def __init__(self, code: str):
         self.code = code
@@ -31,7 +31,7 @@ class CurrencyNotFoundError(ValutaTradeError):
 
 class ApiRequestError(ValutaTradeError):
     '''
-    Обрабатывает ошибки от apu
+    Обрабатывает ошибки от api
     '''
     def __init__(self, reason: str):
         self.reason = reason
