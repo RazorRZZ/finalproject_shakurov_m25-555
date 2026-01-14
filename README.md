@@ -11,37 +11,43 @@
 
 Структура каталогов:
 
+```
 finalproject_shakurov_m25-555/
-│  
+│
 ├── data/
-│    ├── users.json          
-│    ├── portfolios.json       
-│    └── rates.json            
+│   ├── users.json
+│   ├── portfolios.json
+│   └── rates.json
+│
 ├── valutatrade_hub/
-│    ├── __init__.py
-│    ├── logging_config.py         
-│    ├── decorators.py             
-│    ├── core/
-│    │    ├── __init__.py
-│    │    ├── currencies.py         
-│    │    ├── exceptions.py         
-│    │    ├── models.py             
-│    │    ├── usecases.py           
-│    │    └── utils.py              
-│    ├── infra/
-│    │    ├─ __init__.py
-│    │    ├── settings.py           
-│    │    └── database.py           
-│    └── cli/
-│         ├─ __init__.py
-│         └─ interface.py     
+│   ├── __init__.py
+│   ├── logging_config.py
+│   ├── decorators.py
+│   │
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── currencies.py
+│   │   ├── exceptions.py
+│   │   ├── models.py
+│   │   ├── usecases.py
+│   │   └── utils.py
+│   │
+│   ├── infra/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   └── database.py
+│   │
+│   └── cli/
+│       ├── __init__.py
+│       └── interface.py
 │
 ├── main.py
 ├── Makefile
 ├── poetry.lock
 ├── pyproject.toml
 ├── README.md
-└── .gitignore               
+└── .gitignore
+```              
 
 Команды для взаимодействия программой:
 
